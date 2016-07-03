@@ -1,0 +1,24 @@
+
+
+
+# Set colors:
+color_b='\[\033[0;34m\]'
+color_r='\[\033[0;31m\]'
+color_g='\[\033[0;32m\]'
+color_y='\[\033[0;33m\]'
+color_m='\[\033[0;35m\]'
+color_c='\[\033[0;36m\]'
+color_n='\[\033[0m\]'
+
+
+# Custom prompt:
+__time="$color_g\@"
+__cwd="$color_y\w"
+__branch_color="$color_b"
+__branch='`__git_ps1`'
+__prompt="$color_g>$color_n"
+
+export PS1="\n$__time $__cwd $__branch_color$__branch \n$__prompt "
+
+
+
