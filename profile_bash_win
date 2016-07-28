@@ -19,6 +19,12 @@ __branch='`__git_ps1`'
 __prompt="$color_g>$color_n"
 
 export PS1="\n$__time $__cwd $__branch_color$__branch \n$__prompt "
+export PS2="$__prompt "
+
+
+
+# Set grep to ignore case, print line numbers, and use color:
+alias grep='grep -i -n --color'
 
 
 
