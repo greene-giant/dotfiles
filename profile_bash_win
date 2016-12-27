@@ -27,4 +27,7 @@ export PS2="$__prompt "
 alias grep='grep -i -n --color'
 
 
+# Add my custom python modules to python path:
+PYTHONPATH="${PYTHONPATH};${HOME}\Home\Programs\Libraries\Python"
+export PYTHONPATH
 
